@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="p-3 mb-2 bg-light text-black">
+    <header>
+        <h1 id = "heading">Sorter</h1>
+        <nav>
+            <div class = "front">
+                <div class="col d-sm-flex" id = "newarray">
+                    <button type="button" class="btn btn-outline-success btn-light new">Generate New Array</button>
+                </div>
+                <div>
+                    <span id = "size">Array Size :
+                        <input id = "arr_size" type = "range" min = "0" max = "100" step= "1" value="15">
+                    </span>
+                    <span id = "speed"> Speed : 
+                        <input id = "sort_speed" type = "range" min="10" max="400" stepDown="20" value="20">
+                    </span>
+                </div>
+
+                <div class="col gap-2 d-sm-flex justify-content-start">
+                    <button type="button" class="btn btn-outline-primary btn-light bubbleSort">Bubble Sort</button>
+                    <button type="button" class="btn btn-outline-primary btn-light selectionSort">Selection Sort</button>
+                    <button type="button" class="btn btn-outline-primary btn-light insertionSort">Insertion Sort</button>
+                    <button type="button" class="btn btn-outline-primary btn-light quickSort">Quick Sort</button>
+                    <button type="button" class="btn btn-outline-primary btn-light mergeSort">Merge Sort</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id = "bars" class = "container"></div>
+    <script src="visualizer.js"></script>
+    <script src="bubble.js"></script>
+    <script src="selection.js"></script>
+    <script src="insertion.js"></script>
+</body>
+</html>
